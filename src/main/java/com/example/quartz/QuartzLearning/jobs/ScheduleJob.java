@@ -1,5 +1,7 @@
 package com.example.quartz.QuartzLearning.jobs;
 
+import java.io.Serializable;
+
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;

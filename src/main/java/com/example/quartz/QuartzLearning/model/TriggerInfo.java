@@ -4,12 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
+import java.io.Serializable;
 
 @AllArgsConstructor
 @Getter
 @Setter
-public class TriggerInfo {
+public class TriggerInfo implements Serializable {
 
     private int triggerCount;
     private boolean isRunningForEver;

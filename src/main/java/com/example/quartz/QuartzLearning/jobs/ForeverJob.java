@@ -1,7 +1,12 @@
 package com.example.quartz.QuartzLearning.jobs;
 
-import org.quartz.Job;
+import java.io.Serializable;
 
+import org.quartz.Job;
+import org.springframework.stereotype.Component;
+
+
+@Component
 public class ForeverJob implements Job {
     @Override
     public void execute(org.quartz.JobExecutionContext jobExecutionContext) {

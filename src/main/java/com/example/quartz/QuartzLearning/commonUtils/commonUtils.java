@@ -46,6 +46,7 @@ public class commonUtils {
         JobDetail jobDetail = JobBuilder.newJob(jobClassName)
                 .withIdentity(jobClassName.getSimpleName(), "grp1")
                 .usingJobData(jobDataMap)
+                .storeDurably(true)
                 .build();
         return jobDetail;
     }
