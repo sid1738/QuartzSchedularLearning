@@ -11,4 +11,9 @@ import lombok.Setter;
 @Setter
 public class TriggerInfo {
 
+    private int triggerCount;
+    private boolean isRunningForEver;
+    private Long timeInterval;
+    private Long initialOffset;
+    private String info;
 }
